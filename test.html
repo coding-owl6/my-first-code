@@ -1,2 +1,257 @@
-This is a test.
-Here is another line of text.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+  h1 {
+	color: #ffd000;
+  }
+  h2 {
+  	background: linear-gradient(to bottom, rgba(0,0,0,0.3), red);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: solid 1px #000000;
+    box-shadow: 1px 0 10px 2px rgba(0,0,0,0.3);
+  }
+  h3 {
+  	background: teal;                               
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    border: solid 1px #000000;
+    box-shadow: 1px 0 10px 2px red;
+
+  }
+  h4 {
+  	background: purple;
+    padding: 1rem 3.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 1;
+    border-radius: 100rem;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+  }
+  h6 {   
+    background: red;                                             
+    padding: 1rem 2rem;
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
+    line-height: 1;
+    border-radius: 10rem;
+  	transition: all 0.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  h6 span {
+    transition: all 0.5s;
+  }
+  h6:hover span {
+  	transform: rotate(360deg);
+    color: black;
+  }
+  .box {
+  	background: #ea789e;
+    padding: 2rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 0rem;
+    transition: all 1.5s;
+  }
+  .box:hover {
+  	transform: rotate(90deg);
+    border-radius: 100rem;
+  }
+  .box-2 {
+  	background: #ff0000;
+	padding: 2rem;
+    height: 100px;
+    width: 100px;
+  	transition: all 0.5s;
+  }
+  .box-2:hover {
+  	cursor: pointer;
+  	transform: translateY(-50px);
+  }
+  .box-3 {
+  background: #ff0000;
+  padding: 2rem;
+  height: 100px;
+  width: 100px;
+  transition: all 0.5s;
+  }
+  .box-3:hover {
+  cursor: pointer;
+  transform: translateY(-50px);
+  }
+  h5 {
+  background: magenta;
+  padding: 1rem 3rem;
+  text-align: center;
+  color: orange;
+  font-size: 50px;
+  line-height: 2;
+  border-radius: 20rem;
+  }
+  .box-container {
+  	display: flex;
+    flex-direction: row;
+    justify-content: spacing-between;
+    gap: 10rem;
+  }
+
+  .box-5 {
+  background: red;
+  padding: 2rem;
+  height: 40px;
+  width: 40px;
+  transition: all 0.5s;
+  }
+  .box-5:hover {
+  transition: all 0.5s;
+  border-radius: 100rem;
+  transform: translateY(-40px);
+  }
+  .box-4 {
+  background: red;
+  padding: 1rem 2rem;
+  height: 100px;
+  width: 50px;
+  transition: 0.5s;
+  }
+  .box-4:hover {
+  background: blue;
+  cursor: pointer;
+  transform: translateY(-50px);
+  }
+  
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: left-to-right 3s infinite;
+}
+
+.animated-box-2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: up-and-down-2 3s infinite;
+}
+
+.animated-box-3 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: square-movement 3s infinite;
+}
+
+@keyframes up-and-down-2 {
+  0%   {top: 0px; background: red; width: 100px;}
+  50% {top: 200px; background: yellow; width: 300px;}
+  100%   {top: 0px; background: red; width: 100px;}
+}
+
+@keyframes left-to-right {
+  0%   {left: 0px;}
+  50%  {left: 200px;}
+  100% {left: 0px;}
+}
+  
+@keyframes square-movement {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+</style>
+</head>
+<body>
+
+<h1>h1 tag</h1>
+<h2>h2 tag</h2>
+<h3>h3 tag</h3>
+<h4>h4 tag</h4>
+<h5>h5 tag</h5>
+<h6>h6 tag <span>*</span></h6>
+
+<div class="animated-box"></div>
+
+<p>Aniyah's <b>website</b></p>
+
+<div class="box-container">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box-2" id="boxing">test</div>
+</div>
+<div class="box-container">
+<div class="box-2">
+Aniyah's code
+made by: Aniyah
+a code of h tags
+</div>
+<div class="box-4"></div>
+<div class="box-5"></div>
+</div>
+
+<div class="animated-box-2"></div>
+
+<br><br><br><br><br><br>
+
+<div class="animated-box-3"></div>
+<br><br><br><br><br><br>
+<!--
+<script>
+const demo = document.getElementById("boxing");
+demo.style.display = "none";
+</script>
+-->
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
